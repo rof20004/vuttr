@@ -24,7 +24,10 @@
 | http://localhost:3000/tools             |   GET       |             |  Query all tools       |
 | http://localhost:3000/tools             |   POST      |             |  Create a tool         |
 | http://localhost:3000/tools?tag=node    |   GET       |             |  Query tools by tag    |
-| http://localhost:3000/tools/:tool_id    |   DELETE    |     YES     |  Delete tool by id     |
+| http://localhost:3000/tools/:tool_id    |   DELETE    |       YES   |  Delete tool by id     |
+
+
+> Basic Auth: username = admin password = bossabox
   
  
 ### Enjoy!
