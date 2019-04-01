@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  postgres:
+    restart: always
+    image: postgres
+    volumes:
+      - vuttr-data:/var/lib/postgresql/data
+  backend:
+    restart: always
+    depends_on:
+      - postgres
+    build:
+      context: .
+    environment:
+      - PGUSER=postgres
+      - PGHOST=postgres
+      - PGDATABASE=postgres
+      - PGPASSWORD=postgres
+      - PGPORT=5432
+    ports:
+      - '3000:3000'
+
+volumes:
+  vuttr-data:
