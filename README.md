@@ -26,8 +26,11 @@
 | http://localhost:3000/tools?tag=node    |   GET       |             |  Query tools by tag    |
 | http://localhost:3000/tools/:tool_id    |   DELETE    |       YES   |  Delete tool by id     |
 
-
 > Basic Auth: username = admin password = bossabox
+
+## API documentation
+| URI                                     |  Method     |  Protected  |    Short Description   |
+|-----------------------------------------|-------------|-------------|------------------------|
+| http://localhost:3000/doc/API.html      |   GET       |             |    API documentation   |
   
- 
 ### Enjoy!

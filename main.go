@@ -10,6 +10,7 @@ import (
 
 func main() {
 	router := fasthttprouter.New()
+	router.ServeFiles("/doc/*filepath", "./public")
 
 	handlers.InitializeToolsHandlers(router)
 
